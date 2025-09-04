@@ -5,3 +5,4 @@
 # Basic commands in python programming
 
 print("Hello world")
+print(1+2)
