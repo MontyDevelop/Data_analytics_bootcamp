@@ -312,3 +312,145 @@ a1 = np.array([10,20,30])
 
 # Output:
 # 5  (First it ll sort the array then search)
+
+
+# ar1 = np.array([10,20,30,40])
+# filtered_ar = [False, True, False, True] # make sure number of elements in ar1 use same number of True False. 
+
+# new_array = ar1[filtered_ar]
+# print(new_array)
+
+# Output:
+# [20 40]
+
+
+# ar1 = np.array([10,20,30,40])
+# filtered_ar = ar1 > 20
+
+# new_array = ar1[filtered_ar]
+# print(new_array)
+
+# Output:
+# [30 40]
+
+# ------------------Aggregating function in arrays---------------------
+
+# a = np.array([20,30,40,50])
+
+# # print(np.sum(a))
+
+# print(np.min(a))
+# print(np.max(a))
+# # print(np.count(a)) #❌
+# print(np.size(a)) #✅
+# print(np.mean(a))
+# print(np.cumsum(a)) # cumalative sum
+# print(np.cumprod(a)) # cumlative product
+
+
+
+# a = [100,150,199,200,250,130]
+# b = [10,20,50,20,30,10]
+
+# price = np.array(a)
+# quantity = np.array(b)
+
+# print(price,"\n",quantity)
+
+# Output:
+# [100 150 199 200 250 130] 
+#  [10 20 50 20 30 10]
+
+# print(np.sum(price)) 
+# Output:
+# 1029
+
+
+# print(np.cumsum([price,quantity], axis=0))
+
+# Output:
+# [[100 150 199 200 250 130]
+#  [110 170 249 220 280 140]]
+
+
+# print(np.cumprod([price,quantity], axis=0))
+
+# Output:
+# [[ 100  150  199  200  250  130]
+#  [1000 3000 9950 4000 7500 1300]]
+
+# c = np.cumprod([price,quantity], axis=0)
+# print(c[1].sum())
+
+# Output:
+# 26750
+
+# -------------------------Statistics functions in arrays-------------------------
+
+baked_food = [200,300,150,130,200,280,170,188]
+
+arr1 = np.array(baked_food)
+# print(np.mean(baked_food))
+# print(np.mean(arr1)) # same output
+
+# Output:
+# 202.25
+
+
+# print(np.median(arr1)) # First sorted then taken the middle value
+# Output:
+# 194.0
+
+# print(np.sort(arr1))
+# Output:
+# [130 150 170 188 200 200 280 300]
+# print((188 + 200) / 2) = 194.0
+
+
+# no mode function in numpy 
+
+import statistics as stats
+
+# print(stats.mode(baked_food))
+
+# Output:
+# 200
+
+
+# 🔥 important for data analysis
+# print(np.std(baked_food)) #standard deviation means the every data is not so far from the mean value of the whole array. 
+# It also give the spread of our data
+
+# Output:
+# 55.68157235567257 
+
+# print(np.var(baked_food)) 
+
+# Output:
+# 3100.4375
+
+# This is used in quality control
+
+tobacco_consumption = [30,50,10,30,50,40]
+
+deaths = [100,120,70,100,120,112]
+
+# print(np.corrcoef([tobacco_consumption,deaths]))
+
+# Output:
+
+# [[1.         0.99015454]
+#  [0.99015454 1.        ]]
+
+# -1 represent inversly proportional relationship
+# +1 represent directly proportional relationship
+
+
+
+price = [300,100,350,150,200]
+sale = [10,20,7,17,3]
+
+print(np.corrcoef([price, sale]))
+
+# Output:
+
