@@ -431,9 +431,9 @@ import statistics as stats
 
 # This is used in quality control
 
-tobacco_consumption = [30,50,10,30,50,40]
+# tobacco_consumption = [30,50,10,30,50,40]
 
-deaths = [100,120,70,100,120,112]
+# deaths = [100,120,70,100,120,112]
 
 # print(np.corrcoef([tobacco_consumption,deaths]))
 
@@ -446,11 +446,11 @@ deaths = [100,120,70,100,120,112]
 # +1 represent directly proportional relationship
 
 
+# price = [300,100,350,150,200]
+# sale = [10,20,7,17,3]
 
-price = [300,100,350,150,200]
-sale = [10,20,7,17,3]
-
-print(np.corrcoef([price, sale]))
+# print(np.corrcoef([price, sale]))
 
 # Output:
-
+# [[ 1.         -0.66621445]
+#  [-0.66621445  1.        ]]
