@@ -24,7 +24,7 @@ print(type(c))
 
 # Sequence Data Types
 
-s = 'Welcome to the Geeks World'
+s = 'Welcome to the Newgen Robotics World'
 print(s)
 
 # check data type 

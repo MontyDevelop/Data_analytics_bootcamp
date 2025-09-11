@@ -4,8 +4,8 @@
 
 # Creating a String
 
-s1 = 'GfG'  # single quote
-s2 = "GfG"  # double quote
+s1 = 'NgR'  # single quote
+s2 = "NGR"  # double quote
 print(s1)
 print(s2)
 
@@ -57,9 +57,9 @@ del s
 
 # Updating a String
 
-s = "hello geeks"
+s = "hello gens"
 s1 = "H" + s[1:]                   # update first character
-s2 = s.replace("geeks", "GeeksforGeeks")  # replace word
+s2 = s.replace("Newgens", "Newgen Robotics")  # replace word
 print(s1)
 print(s2)
 
@@ -68,7 +68,7 @@ print(s2)
 
 
 #  len(): The len() function returns the total number of characters in a string (including spaces and punctuation).
-s = "GeeksforGeeks"
+s = "Newgen-Robotics"
 print(len(s))
 
 # upper() and lower(): upper() method converts all characters to uppercase whereas, lower() method converts all characters to lowercase.
@@ -112,7 +112,7 @@ print(s)
 
 # String Membership Testing
 
-s = "GeeksforGeeks"
+s = "Newgen-Robotics"
 print("Geeks" in s)
 print("GfG" in s)
 
